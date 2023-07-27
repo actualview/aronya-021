@@ -12,7 +12,8 @@
 	<img id="star" src="assets/star.png" />
         <a-asset-item id="moon" src="assets/moon.glb"></a-asset-item>
       </a-assets>
-
+        arjs='sourceType: webcam; sourceWidth:1920; sourceHeight:1440; displayWidth: 1920; displayHeight: 1440; debugUIEnabled: false;'
+        renderer="antialias: false; logarithmicDepthBuffer:true">
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
       <a-entity mindar-image-target="targetIndex: 0">
