@@ -5,8 +5,8 @@
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
   </head>
   <body>
-    <a-scene mindar-image="imageTargetSrc: marker/marker300a.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
-      <a-scene mindar-image="filterMinCF:0.0001; filterBeta: 0.001"/>
+    <a-scene mindar-image="imageTargetSrc: marker/marker300a.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false"
+      mindar-image="filterMinCF:0.0001; filterBeta: 0.001">
       <a-assets>
 	<img id="star" src="assets/star.png" />
         <a-asset-item id="moon" src="assets/moon.glb"></a-asset-item>
@@ -20,9 +20,6 @@
         ></a-image>
         <a-gltf-model rotation="0 0 0 " position="0 3.1 0" scale="0.4 0.4 0.4" src="#moon"
 	  animation="property: rotation; to: 0 360 0; dur: 20000; easing: easeInOutQuad; loop: true; dir: alternate"
-        >
-      </a-entity>
-    </a-scene>
         >
       </a-entity>
     </a-scene>
